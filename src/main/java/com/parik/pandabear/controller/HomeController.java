@@ -16,7 +16,14 @@ public class HomeController {
     	//sendSimpleMessage("chudasma@gmail.com","Test Subject", "Test");
         return "index";
     }
-    
+
+    @RequestMapping("/header")
+    public String header(){
+
+        return "header";
+    }
+
+
     @RequestMapping("/about")
     public String about(){
         return "about";

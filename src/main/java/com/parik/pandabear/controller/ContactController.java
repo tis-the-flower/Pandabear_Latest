@@ -39,7 +39,7 @@ public class ContactController {
 	        try {
 	        	sendSimpleMessage("chudasma@gmail.com",contact.getEmail(),"Internet Inquiry from "+ contact.getName()+" ::: " +contact.getSubject(), contact.getMessage());
 	        }catch(Exception ex) {
-	        	System.out.println("Exception Occured...");
+	        	System.out.println("Exception Occured..." + ex);
 	        }
 	        return "contact";
 	    }
@@ -48,7 +48,7 @@ public class ContactController {
 	    	      String to,String cc, String subject, String text) {
 	    	        
 	    	        SimpleMailMessage message = new SimpleMailMessage(); 
-	    	        message.setFrom("pandabearphx@gmail.com");
+	    	        message.setFrom("parik.chudasma@gmail.com");
 	    	        message.setTo(to); 
 	    	        message.setCc(cc);
 	    	        message.setSubject(subject); 

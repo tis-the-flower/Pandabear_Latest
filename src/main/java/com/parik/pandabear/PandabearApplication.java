@@ -10,7 +10,7 @@ public class PandabearApplication {
 
 	public static void main(String[] args) {
 		
-		System.out.println("This is the test");
+		System.out.println("Starting Panda Bear SpringBoot");
 		SpringApplication.run(PandabearApplication.class, args);
 	}
 
